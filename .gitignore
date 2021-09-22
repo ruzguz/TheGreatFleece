@@ -58,3 +58,8 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Project folder
+[Aa]ssets/The Great Fleece/Cinemachine/
+[Aa]ssets/The Great Fleece/PostProcessing/
+[Aa]ssets/The Great Fleece/Director Notes/
+[Aa]ssets/The Great Fleece/Game/Models/
