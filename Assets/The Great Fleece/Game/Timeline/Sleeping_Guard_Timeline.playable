@@ -64,6 +64,30 @@ MonoBehaviour:
   m_Clips: []
   m_Markers:
     m_Objects: []
+--- !u!114 &-6709742672336617380
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fc6f5187a81dc47999eefade6f0935, type: 3}
+  m_Name: Virtaul_Cameras
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children:
+  - {fileID: -2020895928105230431}
+  m_Clips: []
+  m_Markers:
+    m_Objects: []
 --- !u!74 &-5966081381758748445
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -285,7 +309,7 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
+  m_Parent: {fileID: -6709742672336617380}
   m_Children: []
   m_Clips: []
   m_Markers:
@@ -725,10 +749,10 @@ MonoBehaviour:
   m_Tracks:
   - {fileID: 9218973763970972079}
   - {fileID: 4388145251946424580}
-  - {fileID: -2020895928105230431}
   - {fileID: 6040684546577802910}
   - {fileID: -8547632782243442614}
   - {fileID: -779851154908314925}
+  - {fileID: -6709742672336617380}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
