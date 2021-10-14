@@ -1503,10 +1503,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM_Room_Shot
   - m_Version: 1
-    m_Start: 24.833333333333336
+    m_Start: 18.983333333333334
     m_ClipIn: 0
     m_Asset: {fileID: 6288104350521764483}
-    m_Duration: 5
+    m_Duration: 2.133333333333333
     m_TimeScale: 1
     m_ParentTrack: {fileID: 4382089907133132346}
     m_EaseInDuration: 0
@@ -1554,7 +1554,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM_Front_Shot
   - m_Version: 1
-    m_Start: 29.833333333333336
+    m_Start: 21.116666666666667
     m_ClipIn: 0
     m_Asset: {fileID: -3882110819939042260}
     m_Duration: 5
@@ -1623,7 +1623,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM_Darren_Sees_Guards
   - m_Version: 1
-    m_Start: 34.833333333333336
+    m_Start: 26.116666666666667
     m_ClipIn: 0
     m_Asset: {fileID: -438174499796410269}
     m_Duration: 5
