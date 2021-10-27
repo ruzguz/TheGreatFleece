@@ -372,7 +372,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 42.116665
+        time: 40.65
         value: {x: 0.00000023841858, y: 0, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -436,7 +436,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 42.116665
+        time: 40.65
         value: 0.00000023841858
         inSlope: 0
         outSlope: 0
@@ -464,7 +464,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 42.116665
+        time: 40.65
         value: 0
         inSlope: 0
         outSlope: 0
@@ -492,7 +492,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 42.116665
+        time: 40.65
         value: 0
         inSlope: 0
         outSlope: 0
@@ -2017,7 +2017,7 @@ MonoBehaviour:
     m_Start: 1.0166666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 271875562418237003}
-    m_Duration: 2.966666666666667
+    m_Duration: 1.4500000000000002
     m_TimeScale: 1
     m_ParentTrack: {fileID: 4382089907133132346}
     m_EaseInDuration: 0
@@ -2050,25 +2050,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -2083,10 +2065,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM_Darren_Landing
   - m_Version: 1
-    m_Start: 3.9833333333333334
+    m_Start: 2.466666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 2897039120049026209}
-    m_Duration: 5
+    m_Duration: 6.433333333333334
     m_TimeScale: 1
     m_ParentTrack: {fileID: 4382089907133132346}
     m_EaseInDuration: 0
@@ -2095,25 +2077,7 @@ MonoBehaviour:
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -2152,10 +2116,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM_Darren_Side_Shot
   - m_Version: 1
-    m_Start: 8.983333333333334
+    m_Start: 8.9
     m_ClipIn: 0
     m_Asset: {fileID: 7391652266457810652}
-    m_Duration: 5
+    m_Duration: 6.430119317700155
     m_TimeScale: 1
     m_ParentTrack: {fileID: 4382089907133132346}
     m_EaseInDuration: 0
@@ -2203,10 +2167,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM_Rise_To_Reveal
   - m_Version: 1
-    m_Start: 13.983333333333334
+    m_Start: 15.330119317700156
     m_ClipIn: 0
     m_Asset: {fileID: -277140639203668226}
-    m_Duration: 5
+    m_Duration: 3.3698806822998435
     m_TimeScale: 1
     m_ParentTrack: {fileID: 4382089907133132346}
     m_EaseInDuration: 0
@@ -2254,10 +2218,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM_Room_Shot
   - m_Version: 1
-    m_Start: 18.983333333333334
+    m_Start: 18.7
     m_ClipIn: 0
     m_Asset: {fileID: 6288104350521764483}
-    m_Duration: 2.133333333333333
+    m_Duration: 1.6333333333333329
     m_TimeScale: 1
     m_ParentTrack: {fileID: 4382089907133132346}
     m_EaseInDuration: 0
@@ -2305,10 +2269,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM_Front_Shot
   - m_Version: 1
-    m_Start: 21.116666666666667
+    m_Start: 20.333333333333332
     m_ClipIn: 0
     m_Asset: {fileID: -3882110819939042260}
-    m_Duration: 5
+    m_Duration: 4.266666666666669
     m_TimeScale: 1
     m_ParentTrack: {fileID: 4382089907133132346}
     m_EaseInDuration: 0
@@ -2374,7 +2338,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM_Darren_Sees_Guards
   - m_Version: 1
-    m_Start: 26.116666666666667
+    m_Start: 24.6
     m_ClipIn: 0
     m_Asset: {fileID: -438174499796410269}
     m_Duration: 5
@@ -2443,10 +2407,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM_Guards_Shot
   - m_Version: 1
-    m_Start: 31.116666666666667
+    m_Start: 29.6
     m_ClipIn: 0
     m_Asset: {fileID: -268584955102333572}
-    m_Duration: 7.200000000000003
+    m_Duration: 8.883333333333333
     m_TimeScale: 1
     m_ParentTrack: {fileID: 4382089907133132346}
     m_EaseInDuration: 0
@@ -2512,10 +2476,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM_Security_Cams
   - m_Version: 1
-    m_Start: 38.31666666666667
+    m_Start: 38.483333333333334
     m_ClipIn: 0
     m_Asset: {fileID: -1603897892178884468}
-    m_Duration: 3.566666666666663
+    m_Duration: 1.8833333333333329
     m_TimeScale: 1
     m_ParentTrack: {fileID: 4382089907133132346}
     m_EaseInDuration: 0
@@ -2581,16 +2545,16 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM_Darren_Anythingelse
   - m_Version: 1
-    m_Start: 49.96666666666667
+    m_Start: 48.45
     m_ClipIn: 0
     m_Asset: {fileID: 730934490708476953}
-    m_Duration: 6.033333333333331
+    m_Duration: 4.849999999999994
     m_TimeScale: 1
     m_ParentTrack: {fileID: 4382089907133132346}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: 1.1666666666666643
-    m_BlendOutDuration: 0.93333333333333
+    m_BlendOutDuration: 1.7333333333333272
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -2650,15 +2614,15 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM_Security_Card
   - m_Version: 1
-    m_Start: 55.06666666666667
+    m_Start: 51.56666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 1231542989695116843}
-    m_Duration: 5
+    m_Duration: 2.5320024162530856
     m_TimeScale: 1
     m_ParentTrack: {fileID: 4382089907133132346}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: 0.93333333333333
+    m_BlendInDuration: 1.7333333333333272
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
@@ -2719,7 +2683,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM_Vault
   - m_Version: 1
-    m_Start: 41.88333333333333
+    m_Start: 40.36666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 7351434765920658729}
     m_Duration: 9.25
@@ -2788,10 +2752,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM_Look_At_Sleeping_Guard
   - m_Version: 1
-    m_Start: 60.06666666666667
+    m_Start: 54.098669082919756
     m_ClipIn: 0
     m_Asset: {fileID: -1298249561683881380}
-    m_Duration: 5
+    m_Duration: 8.134664250413579
     m_TimeScale: 1
     m_ParentTrack: {fileID: 4382089907133132346}
     m_EaseInDuration: 0
