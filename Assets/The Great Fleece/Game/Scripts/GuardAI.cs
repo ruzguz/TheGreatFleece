@@ -56,8 +56,9 @@ public class GuardAI : MonoBehaviour
 
     IEnumerator WaitBeforeMove()
     {
+        int randomTime = Random.Range(2, 6);
         _targetReached = true;
-        yield return new WaitForSeconds(5.0f);
+        yield return new WaitForSeconds(randomTime);
         _agent.SetDestination(_wayPoints[_currentTarget].position);
         _targetReached = false;
     }
