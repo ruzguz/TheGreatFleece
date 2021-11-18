@@ -33,7 +33,7 @@ public class GuardAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_wayPoints.Count > 0 && _wayPoints[0] != null && _targetReached == false) 
+        if (_wayPoints.Count > 1 && _wayPoints[0] != null && _targetReached == false) 
         {
             float distance = Vector3.Distance(transform.position, _wayPoints[_currentTarget].position);
             _animator.SetBool("Walk", true);
