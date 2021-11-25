@@ -9,6 +9,9 @@ public class Player : MonoBehaviour
     // Movement variables
     private NavMeshAgent _agent;
     private Animator _animator;
+    
+    // References and prefabs 
+    [SerializeField] private GameObject _coin;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +40,17 @@ public class Player : MonoBehaviour
         } else 
         {
             _animator.SetBool("Walk", true);
+        }
+
+        // Coin Distraction 
+        if (Input.GetMouseButtonDown(1))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit)) 
+            {
+                Instantiate(_coin,hit.point, Quaternion.identity);
+            }
         }
     }
 }
