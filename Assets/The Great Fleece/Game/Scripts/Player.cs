@@ -5,6 +5,9 @@ using UnityEngine.AI;
 
 public class Player : MonoBehaviour
 {
+    // General Vars
+    [SerializeField]
+    private int _coins = 1; 
 
     // Movement variables
     private NavMeshAgent _agent;
@@ -43,13 +46,14 @@ public class Player : MonoBehaviour
         }
 
         // Coin Distraction 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && _coins > 0)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit)) 
             {
                 Instantiate(_coin,hit.point, Quaternion.identity);
+                _coins--;
             }
         }
     }
