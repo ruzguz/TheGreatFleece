@@ -10,6 +10,7 @@ public class GuardAI : MonoBehaviour
     [SerializeField] private int _currentTarget = 0;
     [SerializeField] private int _path = 1; // 1 = forward, -1 = reverse
     [SerializeField] private bool _targetReached = false;
+    [SerializeField] private bool _otherMovement = false;
     // Components
     private NavMeshAgent _agent;
     private Animator _animator;
@@ -33,7 +34,7 @@ public class GuardAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_wayPoints.Count > 1 && _wayPoints[0] != null && _targetReached == false) 
+        if (_wayPoints.Count > 1 && _wayPoints[0] != null && _targetReached == false && _otherMovement ==  false) 
         {
             float distance = Vector3.Distance(transform.position, _wayPoints[_currentTarget].position);
             _animator.SetBool("Walk", true);
@@ -59,6 +60,28 @@ public class GuardAI : MonoBehaviour
                     _currentTarget += _path;
                     _agent.SetDestination(_wayPoints[_currentTarget].position);
                 }
+            } 
+        } else if(_otherMovement == true) 
+        {
+            // Code for other movement
+            float coinDistance = Vector3.Distance(transform.position, _agent.destination);
+            Debug.Log("Other Movement");
+
+            if (coinDistance < 5.0f)  
+            {
+                Debug.Log("Calling coroutine");
+                _otherMovement = false;
+                StartCoroutine(WaitBeforeMove());
+            }
+        } else if (_wayPoints.Count <= 1) 
+        {
+            float distance = Vector3.Distance(transform.position, _agent.destination);
+            if (distance < 1)
+            {
+                _animator.SetBool("Walk", false);
+            } else 
+            {
+                _animator.SetBool("Walk", true);
             }
         }
     }
@@ -68,8 +91,17 @@ public class GuardAI : MonoBehaviour
         _animator.SetBool("Walk", false);
         int randomTime = Random.Range(2, 6);
         _targetReached = true;
+        _agent.isStopped = true;
         yield return new WaitForSeconds(randomTime);
         _agent.SetDestination(_wayPoints[_currentTarget].position);
         _targetReached = false;
+        _agent.isStopped = false;
+    }
+
+    public void MoveTo(Vector3 destination) 
+    {
+        _animator.SetBool("Walk", true);
+        _otherMovement = true;
+        _agent.SetDestination(destination);
     }
 }

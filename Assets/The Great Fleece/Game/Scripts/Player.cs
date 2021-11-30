@@ -53,8 +53,18 @@ public class Player : MonoBehaviour
             if (Physics.Raycast(ray, out hit)) 
             {
                 Instantiate(_coin,hit.point, Quaternion.identity);
+                SendGuardToCoin(hit.point);
                 _coins--;
             }
+        }
+    }
+
+    void SendGuardToCoin(Vector3 coinPos)
+    {
+        GameObject[] guards = GameObject.FindGameObjectsWithTag("Guard");
+        foreach (GameObject guard in guards) 
+        {
+            guard.GetComponent<GuardAI>().MoveTo(coinPos);
         }
     }
 }
