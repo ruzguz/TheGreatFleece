@@ -52,6 +52,7 @@ public class Player : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit)) 
             {
+                _animator.SetTrigger("Throw");
                 Instantiate(_coin,hit.point, Quaternion.identity);
                 SendGuardToCoin(hit.point);
                 _coins--;
