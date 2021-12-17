@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
             }
 
         }
-        Debug.Log(_agent.remainingDistance + " - " + _agent.stoppingDistance);
+        
         if (_agent.remainingDistance <= _agent.stoppingDistance) 
         {
             _animator.SetBool("Walk", false);
