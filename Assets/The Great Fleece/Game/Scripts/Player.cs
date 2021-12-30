@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) 
+        if (Input.GetMouseButtonDown(0) && Cursor.lockState == CursorLockMode.None) 
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
         }
 
         // Coin Distraction 
-        if (Input.GetMouseButtonDown(1) && _coins > 0)
+        if (Input.GetMouseButtonDown(1) && _coins > 0 && Cursor.lockState == CursorLockMode.None)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
