@@ -65,11 +65,9 @@ public class GuardAI : MonoBehaviour
         {
             // Code for other movement
             float coinDistance = Vector3.Distance(transform.position, _agent.destination);
-            Debug.Log("Other Movement");
 
             if (coinDistance < 5.0f)  
             {
-                Debug.Log("Calling coroutine");
                 _otherMovement = false;
                 StartCoroutine(WaitBeforeMove());
             }
