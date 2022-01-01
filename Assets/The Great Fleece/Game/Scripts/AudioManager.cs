@@ -33,4 +33,14 @@ public class AudioManager : MonoBehaviour
         _voiceOver.clip = clipToPlay;
         _voiceOver.Play();
     }
+
+    public void StopAudio() 
+    {
+        AudioSource[] audioSources = GameObject.FindObjectsOfType<AudioSource>();
+
+        foreach (AudioSource audioSource in audioSources) 
+        {
+            audioSource.Stop();
+        }
+    }
 }
