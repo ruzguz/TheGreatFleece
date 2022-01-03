@@ -31,8 +31,8 @@ public class UIManager : MonoBehaviour
 
     public void Quit() 
     {
-        //Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
+        //UnityEditor.EditorApplication.isPlaying = false;
     }
 
     public void Restart()
